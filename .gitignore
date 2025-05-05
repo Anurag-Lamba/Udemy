@@ -136,15 +136,9 @@ ENV/
 env.bak/
 venv.bak/
 
-# #added_by_me
-# # Ignore any folder named venv or .venv anywhere
-# **/venv/
-# **/.venv/
-# # .gitignore
-# venv/
-# .venv/
-# **/venv/
-# **/.venv/
+#added_by_me
+**/venv/
+**/.venv/
 
 
 
