@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: biuutilities
+Version: 0.1
+Summary: A package containing biuutilities module
+Author: Darahaas Yajamanyam
+Requires-Dist: cryptography
+Requires-Dist: boto3
+Requires-Dist: snowflake-connector-python
+Requires-Dist: snowflake-connector-python[pandas]
+Requires-Dist: snowflake-sqlalchemy
+Requires-Dist: sqlalchemy
+Requires-Dist: pandas
+Requires-Dist: dill
+Requires-Dist: pycryptodome
+
