@@ -9,6 +9,8 @@ load_dotenv()
 
 import httpx
 
+# from pydantic import BaseModel, PydanticUserError
+
 custom_http_client = httpx.Client(verify=False)
 
 groq_api_key=os.getenv("GROQ_API_KEY")
@@ -26,9 +28,6 @@ parser=StrOutputParser()
 
 ##create chain
 chain=prompt_template|model|parser
-
-
-
 
 
 ## App definition
