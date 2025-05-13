@@ -11,26 +11,26 @@ import httpx
 
 
 
-# custom_http_client = httpx.Client(verify=False)
+custom_http_client = httpx.Client(verify=False)
 # custom_http_client = httpx.AsyncClient(verify=False)
 
 # Custom sync client
-sync_client = httpx.Client(verify=False)
+# sync_client = httpx.Client(verify=False)
 
 # Custom async client
-async_client = httpx.AsyncClient(verify=False)
+# async_client = httpx.AsyncClient(verify=False)
 
 
 
 
 groq_api_key=os.getenv("GROQ_API_KEY")
-# model=ChatGroq(model="Gemma2-9b-It",groq_api_key=groq_api_key,http_client=custom_http_client)
-model = ChatGroq(
-    model="Gemma2-9b-It",
-    groq_api_key=groq_api_key,
-    http_client=sync_client,
-    async_client=async_client
-)
+model=ChatGroq(model="Gemma2-9b-It",groq_api_key=groq_api_key,http_client=custom_http_client)
+# model = ChatGroq(
+#     model="Gemma2-9b-It",
+#     groq_api_key=groq_api_key,
+#     http_client=sync_client,
+#     async_client=async_client
+# )
 
 
 
