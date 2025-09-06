@@ -20,7 +20,7 @@ os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 ## Function to load OpenAI model and get respones
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-2.5-flash-lite')
 chat = model.start_chat(history=[])
 def get_gemini_response(question):
     
