@@ -28,7 +28,7 @@ unstructured
 pytube
 numexpr
 huggingface_hub
-gradio
+# gradio
 
 streamlit
 langchain_ollama
